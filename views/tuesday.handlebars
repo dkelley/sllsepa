@@ -1,0 +1,111 @@
+<script type="text/javascript">
+	var games = {{ data }}
+</script>
+<div class="row">
+	<div class="large-12 columns">
+		<h1>South - Tuesday  Night League</h1>
+	</div>
+</div>    
+
+<div class="row">
+	<div class="large-12 columns">
+		<div class="panel">
+			<h3>Rankings (&amp; Team Contacts)</h3>
+				<ol class="accordion" data-accordion>
+				  <li class="accordion-navigation">
+				    <a href="#panel2a">Ridley (2-0)</a>
+				    <div id="panel2a" class="content">
+				    	<b>Contact:&nbsp</b><a href="mailto:jmurrdelco@comcast.net">jmurrdelco@comcast.net</a><br/>
+				    	<b>Field</b>Everywhere
+				    </div>
+				  </li>
+				  <li class="accordion-navigation">
+				    <a href="#panel1a">Advil (1-1)</a>
+				    <div id="panel1a" class="content">
+				    	<b>Contact:</b>Gary Dudek <garyd119@comcast.net><br/>
+				    	<b>Field:</b>Everywhere
+				    </div>
+				  </li>
+				  <li class="accordion-navigation">
+				    <a href="#panel3a">Bickell Electric (1-1)</a>
+				    <div id="panel3a" class="content">
+				    	<b>Contact:</b>Dan Bickell <bickell3@gmail.com><br/>
+				    	<b>Field:</b>AIM Academy - 1200 River Rd, Conshohocken
+				    </div>
+				  </li>
+				  <li class="accordion-navigation">
+				    <a href="#panel4a">Kelly's Taproom (1-1)</a>
+				    <div id="panel4a" class="content">
+				    	<b>Contact</b><br/>
+				    	<b>Field</b>
+				    </div>
+				  </li>
+				  <li class="accordion-navigation">
+				    <a href="#panel5a">Wilmington Wings</a>
+				    <div id="panel5a" class="content">
+				    	<b>Contact</b><br/>
+				    	<b>Field</b>
+				    </div>
+				  </li>
+				  <li class="accordion-navigation">
+				    <a href="#panel6a">Phila. Masters</a>
+				    <div id="panel6a" class="content">
+				    	<b>Contact:</b><a href="mailto:coachdipuppo@hotmail.com">Mike DiPuppo</a><br/>
+				    	<b>Field</b>
+				    </div>
+				  </li>
+				</ol>			
+
+		</div>
+	</div>
+</div>	
+
+{{#if data}}
+{{#each data}}
+<div class="row">
+	<div class="large-12 columns">
+		<div class="panel">
+			<h3>{{Date}}</h3>
+			<div class="row">
+				{{#each Games}}
+				<div class="large-10 small-10 columns">
+						{{this.[0]}} @ {{this.[1]}}
+				</div>
+				<div class="large-2 small-2 columns">
+					<!-- nothing for now -->
+				</div>
+		        {{/each}}  	
+			</div>
+		</div>
+	</div>
+</div>	
+{{/each}}
+{{/if}} 
+
+
+<div class="row">
+	<div class="large-12 columns">
+		<div class="panel">
+			<h3>Playoffs - 7/30/15</h3>
+			<div class="row">			
+				<div class="large-10 small-10 columns">
+				</div>
+				<div class="large-2 small-2 columns">
+					<!-- nothing for now -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-10 small-10 columns">
+				</div>
+				<div class="large-2 small-2 columns">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-10 small-10 columns">
+				</div>
+				<div class="large-2 small-2 columns">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
