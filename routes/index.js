@@ -2,9 +2,11 @@ var express = require('express');
 var router = express.Router();
 var fs = require("fs");
 
-var file = fs.readFileSync("data/tuesday.js", 'utf8');
+var tuesday = fs.readFileSync("data/tuesday.js", 'utf8');
+var thursday = fs.readFileSync("data/thursday.js", 'utf8');
 
-var tuesdayGames = JSON.parse(file);
+var tuesdayGames = JSON.parse(tuesday);
+var thursdayGames = JSON.parse(thursday);
 
 // var tuesdayTeams = [{"name": "Sun Valley Cocos", "field": }
 
@@ -27,8 +29,20 @@ router.get('/schedule', function(req, res, next) {
 router.get('/schedule/:section', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   console.log(req.params.section);
+  var data = tuesdayGames;
+  var teams = null;
+  if ("tuesday" == req.params.section){
+	data = tuesdayGames;
+  }else if ("thursday" == req.params.section){
+  	data = thursdayGames;
+  }else if ("masters" == req.params.section){
+  	data = null;
+  }
   res.render(req.params.section, {
-  		"data": tuesdayGames });
+  		"data":  data,
+  		"teams": teams
+  	}
+  );
 });
 
 module.exports = router;
