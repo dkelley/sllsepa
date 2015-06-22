@@ -4,242 +4,49 @@
 	</div>
 </div>    
 
+{{#if teams}}
 <div class="row">
 	<div class="large-12 columns">
 		<div class="panel">
 			<h3>Rankings (&amp; Team Contacts)</h3>
 				<ol class="accordion" data-accordion>
+				  {{#each teams}}
 				  <li class="accordion-navigation">
-				    <a href="#panel2a">Ridley (2-0)</a>
+				    <a href="#panel2a">{{this.name}} ({{this.wins}}-{{this.loses}})</a>
 				    <div id="panel2a" class="content">
-				    	<b>Contact:&nbsp</b><a href="mailto:jmurrdelco@comcast.net">jmurrdelco@comcast.net</a><br/>
-				    	<b>Field</b>Everywhere
+				    	<b>Contact:</b>&nbsp <br/>
+				    	<b>Field:</b>&nbsp;
 				    </div>
 				  </li>
-				  <li class="accordion-navigation">
-				    <a href="#panel1a">Advil (1-1)</a>
-				    <div id="panel1a" class="content">
-				    	<b>Contact:</b>Gary Dudek <garyd119@comcast.net><br/>
-				    	<b>Field:</b>Everywhere
-				    </div>
-				  </li>
-				  <li class="accordion-navigation">
-				    <a href="#panel3a">Bickell Electric (1-1)</a>
-				    <div id="panel3a" class="content">
-				    	<b>Contact:</b>Dan Bickell <bickell3@gmail.com><br/>
-				    	<b>Field:</b>AIM Academy - 1200 River Rd, Conshohocken
-				    </div>
-				  </li>
-				  <li class="accordion-navigation">
-				    <a href="#panel4a">Kelly's Taproom (1-1)</a>
-				    <div id="panel4a" class="content">
-				    	<b>Contact</b><br/>
-				    	<b>Field</b>
-				    </div>
-				  </li>
-				  <li class="accordion-navigation">
-				    <a href="#panel5a">Wilmington Wings</a>
-				    <div id="panel5a" class="content">
-				    	<b>Contact</b><br/>
-				    	<b>Field</b>
-				    </div>
-				  </li>
-				  <li class="accordion-navigation">
-				    <a href="#panel6a">Phila. Masters</a>
-				    <div id="panel6a" class="content">
-				    	<b>Contact:</b><a href="mailto:coachdipuppo@hotmail.com">Mike DiPuppo</a><br/>
-				    	<b>Field</b>
-				    </div>
-				  </li>
-				</ol>			
-
+				  {{/each}}
+				 </ol>
 		</div>
 	</div>
 </div>	
+{{/if}} 
 
+{{#if games}}
+{{#each games}}
 <div class="row">
 	<div class="large-12 columns">
 		<div class="panel">
-			<h3>Week 1 - 6/11/15</h3>
-			<div class="row">			
+			<h3>{{Date}}</h3>
+			<div class="row">
+				{{#each Games}}
 				<div class="large-10 small-10 columns">
-						Phila. Masters @ Wilmington Wings
+						{{this.[0]}} v {{this.[1]}} @ {{this.[2]}} 
+						{{#if this.[3]}}<br/>({{this.[3]}} to {{this.[4]}}){{/if}} 
 				</div>
 				<div class="large-2 small-2 columns">
 					<!-- nothing for now -->
 				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-						Kelly's Taproom @ Bickell Electric
-				</div>
-				<div class="large-2 small-2 columns">
-					12-7
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-						Advil @ Ridley
-				</div>
-				<div class="large-2 small-2 columns">
-					3-4
-				</div>
+		        {{/each}}  	
 			</div>
 		</div>
 	</div>
 </div>	
-
-<div class="row">
-	<div class="large-12 columns">
-		<div class="panel">
-			<h3>Week 2 - 6/18/15</h3>
-			<div class="row">			
-				<div class="large-10 small-10 columns">
-					Phila. Masters @ Ridley
-				</div>
-				<div class="large-2 small-2 columns">
-					3-13
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Kelly's Taproom @ Advil
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Wilmington Wings @ Bickell Electric
-				</div>
-				<div class="large-2 small-2 columns">
-					13-6
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
-
-<div class="row">
-	<div class="large-12 columns">
-		<div class="panel">
-			<h3>Week 3 - 6/25/15</h3>
-			<div class="row">			
-				<div class="large-10 small-10 columns">
-					Bickell Electric @ Phila. Masters
-				</div>
-				<div class="large-2 small-2 columns">
-					<!-- nothing for now -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Ridley @ Kelly's Taproom
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Team Advil @ Wilmington Wings
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
-
-<div class="row">
-	<div class="large-12 columns">
-		<div class="panel">
-			<h3>Week 4 - 7/9/15</h3>
-			<div class="row">			
-				<div class="large-10 small-10 columns">
-					Ridley @ Bickell Electric
-				</div>
-				<div class="large-2 small-2 columns">
-					<!-- nothing for now -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Kelly's Taproom @ Wilmington Wings
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Team Advil @ Phila. Masters
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>	
-
-<div class="row">
-	<div class="large-12 columns">
-		<div class="panel">
-			<h3>Week 5 - 7/16/15</h3>
-			<div class="row">			
-				<div class="large-10 small-10 columns">
-					Wilmington Wings @ Ridley
-				</div>
-				<div class="large-2 small-2 columns">
-					<!-- nothing for now -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Phila. Masters @ Kelly's Taproom
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Bickell Electric @ Team Advil
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="large-12 columns">
-		<div class="panel">
-			<h3>Week 6 - 7/23/15</h3>
-			<div class="row">			
-				<div class="large-10 small-10 columns">
-					Wilmington Wings @ Phila. Masters
-				</div>
-				<div class="large-2 small-2 columns">
-					<!-- nothing for now -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Bickell Electric @ Kelly's Taproom
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-10 small-10 columns">
-					Team Advil @ Ridley
-				</div>
-				<div class="large-2 small-2 columns">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
+{{/each}}
+{{/if}} 
 
 <div class="row">
 	<div class="large-12 columns">

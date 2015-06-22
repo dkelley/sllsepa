@@ -4,9 +4,13 @@ var fs = require("fs");
 
 var tuesday = fs.readFileSync("data/tuesday.js", 'utf8');
 var thursday = fs.readFileSync("data/thursday.js", 'utf8');
+var masters = fs.readFileSync("data/masters.js", 'utf8');
 
 var tuesdayGames = JSON.parse(tuesday);
 var thursdayGames = JSON.parse(thursday);
+var mastersData = JSON.parse(masters);
+
+
 
 // var tuesdayTeams = [{"name": "Sun Valley Cocos", "field": }
 
@@ -36,11 +40,12 @@ router.get('/schedule/:section', function(req, res, next) {
   }else if ("thursday" == req.params.section){
   	data = thursdayGames;
   }else if ("masters" == req.params.section){
-  	data = null;
+  	data = mastersData;
   }
+  console.log(data);
   res.render(req.params.section, {
-  		"data":  data,
-  		"teams": teams
+  		"games":  data.games,
+  		"teams": data.teams
   	}
   );
 });
