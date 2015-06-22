@@ -1,3 +1,5 @@
+{"teams":[],
+"games":
 [
 {"Date":"Week 1 - 06/16/15","Games":[
 ["Sun Valley Cocos","O’Hara","6:30 PM"],
@@ -65,4 +67,4 @@
 ["Mud Dogs","Great Am LC ","6:30pm"],
 ["RJP Consulting","Baggataway Tav","6:30pm"]
 ]}
-]
+]}
