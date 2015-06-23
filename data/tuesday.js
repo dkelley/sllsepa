@@ -17,7 +17,7 @@
 ["Top Shelf","Haverford","6:30pm"],
 ["Garnet Valley","O’Hara","6:30pm"],
 ["Old Lions","Sun Valley Cocos","6:30pm"],
-["Rustin","Springfield","6:30pm"],
+["Springfield","Rustin","6:30pm"],
 ["Mud Dogs","Kelly’s Sports","6:30pm"],
 ["RJP Consulting","Duffers Pub","6:30pm"],
 ["Dunn Financial","Baggataway Tav","6:30pm"],
