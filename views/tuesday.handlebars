@@ -1,6 +1,7 @@
 <script type="text/javascript">
 	var games = {{ data }}
 </script>
+<script src="/js/ScheduleController.js"></script>
 <div class="row">
 	<div class="large-12 columns">
 		<h1>South - Tuesday  Night League</h1>
@@ -16,7 +17,7 @@
 		</div>
 	</div>
 </div>	
-
+<div ng-controller="ScheduleController">
 {{#if games}}
 {{#each games}}
 <div class="row">
@@ -25,11 +26,36 @@
 			<h3>{{Date}}</h3>
 			<div class="row">
 				{{#each Games}}
-				<div class="large-10 small-10 columns">
+				<div class="large-8 small-8 columns">
 						{{this.[0]}} @ {{this.[1]}}
 				</div>
-				<div class="large-2 small-2 columns">
-					<!-- nothing for now -->
+				<div class="large-4 small-4 columns">
+					<a href="#" data-reveal-id="scoreModal{{@index}}">Submit Score</a>
+					<div id="scoreModal{{@index}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					  	<h2 id="modalTitle" style="color: #000000; !important">Submit Score</h2>
+						<form>
+					  	<div class="row">
+					  		<div class="large-6 columns">
+				  			    <input type="hidden" name="homeTeam" value="{{this.[0]}}"  ng-model="homeTeam" />
+				  			    <label><b>{{this.[0]}}</b>
+							        <input type="text" name="homeScore" placeholder="Home Score" ng-model="homeScore"/>
+  								</label>
+					  		</div>
+					  		<div class="large-6 columns">
+				  			    <input type="hidden" name="awayTeam" value="{{this.[1]}}" ng-model="awayTeam"/>
+				  			    <label><b>{{this.[1]}}</b>
+							        <input type="text" name="awayScore" placeholder="Away Score" ng-model="awayScore"/>
+  								</label>
+					  		</div>
+					  	</div>
+					  	<div class="row">
+					  		<div class="large-12 columns">
+							  	<a href="#" class="button right" ng-click="submitScore('scoreModal{{@index}}')">Submit</a>
+							</div>
+						</div>
+						</form>
+					  	<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</div>
 		        {{/each}}  	
 			</div>
@@ -65,4 +91,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
