@@ -1,6 +1,8 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
 
+var nodemailer = require("nodemailer");
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');

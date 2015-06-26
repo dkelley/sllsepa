@@ -4,7 +4,6 @@
 {"Date":"Week 1 - 06/16/15","Games":[
 ["Sun Valley Cocos","O’Hara","6:30 PM"],
 ["Top Shelf","Garnet Valley","6:30pm"],
-["Ridley ","Haverford","6:30pm"],
 ["Springfield","Upper Darby","6:30pm"],
 ["Lax Zone","Old Lions","6:30pm"],
 ["Dunn Financial","Great Am LC ","6:30pm"],
@@ -22,6 +21,9 @@
 ["RJP Consulting","Duffers Pub","6:30pm"],
 ["Dunn Financial","Baggataway Tav","6:30pm"],
 ["Great Am LC ","Lax Zone","6:30pm"]
+]},
+{"Date":"Week 2.5 - 06/25/15","Games":[
+["Ridley ","Haverford","6:30pm"]
 ]},
 {"Date":"Week 3 - 06/30/15","Games":[
 ["Old Lions","Top Shelf","6:30pm"],
