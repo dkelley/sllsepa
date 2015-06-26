@@ -12,10 +12,10 @@
 				<ol class="accordion" data-accordion>
 				  {{#each teams}}
 				  <li class="accordion-navigation">
-				    <a href="#panel2a">{{this.name}} ({{this.wins}}-{{this.loses}})</a>
-				    <div id="panel2a" class="content">
-				    	<b>Contact:</b>&nbsp <br/>
-				    	<b>Field:</b>&nbsp;
+				    <a href="#panel{{@index}}">{{this.name}} ({{this.wins}}-{{this.loses}})</a>
+				    <div id="panel{{@index}}" class="content">
+				    	<b>Contact:&nbsp;</b>{{#each this.contacts}}<a href="mailto:{{this.email}}">{{this.name}}</a>,{{/each}}<br/>
+				    	<b>Field:&nbsp;</b>{{{this.field}}}
 				    </div>
 				  </li>
 				  {{/each}}

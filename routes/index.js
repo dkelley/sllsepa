@@ -3,42 +3,38 @@ var router = express.Router();
 var fs = require("fs");
 
 var nodemailer = require("nodemailer");
-var smtpPool = require('nodemailer-smtp-pool');
+// var smtpPool = require('nodemailer-smtp-pool');
+var sesTransport = require('nodemailer-ses-transport');
+// var xoauth2 = require("xoauth2"),
+//     xoauth2gen;
 
-var xoauth2 = require("xoauth2"),
-    xoauth2gen;
+// xoauth2gen = xoauth2.createXOAuth2Generator({
+//     user: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a@developer.gserviceaccount.com',
+//     clientId: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a.apps.googleusercontent.com',
+//     clientSecret: 'mwnRoAxSDS_w5jvzAC12Yxr0',    
+//     refreshToken: '1/4zB450GQQxQTPdIlgLVySQZ3t6DcxY82l6bCrkAwBDFIgOrJDtdun6zK6XiATCKT'
+// });
 
-xoauth2gen = xoauth2.createXOAuth2Generator({
-    user: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a@developer.gserviceaccount.com',
-    clientId: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a.apps.googleusercontent.com',
-    clientSecret: 'mwnRoAxSDS_w5jvzAC12Yxr0',    
-    refreshToken: '1/4zB450GQQxQTPdIlgLVySQZ3t6DcxY82l6bCrkAwBDFIgOrJDtdun6zK6XiATCKT'
-});
+// // SMTP/IMAP
+// xoauth2gen.getToken(function(err, token){
+//     if(err){
+//         return console.log(err);
+//     }
+//     console.log("AUTH XOAUTH2 " + token);
+// });
 
-// SMTP/IMAP
-xoauth2gen.getToken(function(err, token){
-    if(err){
-        return console.log(err);
-    }
-    console.log("AUTH XOAUTH2 " + token);
-});
+// // listen for token updates
+// // you probably want to store these to a db
+// xoauth2gen.on('token', function(token){
+//     console.log('New token for %s: %s', token.user, token.accessToken);
+// });
 
-// listen for token updates
-// you probably want to store these to a db
-xoauth2gen.on('token', function(token){
-    console.log('New token for %s: %s', token.user, token.accessToken);
-});
+var transporter = nodemailer.createTransport(sesTransport({
+    accessKeyId: 'AKIAJCJVGOUGHUN4JVWQ',
+    secretAccessKey: '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',
+    rateLimit: 5
+}));
 
-var transporter = nodemailer.createTransport(smtpPool({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-        xoauth2: xoauth2gen
-    },
-    maxConnections: 5,
-    maxMessages: 10})
-);
 
 // load data files
 var tuesday = fs.readFileSync("data/tuesday.js", 'utf8');
@@ -83,13 +79,15 @@ router.post('/score', function(req, res, next) {
   // return res.status(400).json({"error_message": err});    
         // }else{
   // return res.json({ success: true });   
+  var msgHtml = "Home:" + req.body.homeTeam + ":" + req.body.homeScore + "<br/>" + "Away:" + req.body.awayTeam + ":" + req.body.awayScore;
+  var msgText = "Home:" + req.body.homeTeam + ":" + req.body.homeScore + "\n" + "Away:" + req.body.awayTeam + ":" + req.body.awayScore;
 
   var mailOptions = {
       from: 'dan+sllsepa@kelleyland.com', // sender address
       to: ['dan@kelleyland.com'], // list of receivers
       subject: 'SLLSEPA Score', // Subject line
-      text: 'score is 10 to 1', // plaintext body
-      html: '<b>score is 10 to 1</b>' // html body
+      text: msgText, // plaintext body
+      html: msgHtml // html body
   };  
 
   // // console.log(mailOptions);

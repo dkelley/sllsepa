@@ -2,6 +2,7 @@
 	var games = {{ data }}
 </script>
 <script src="/js/ScheduleController.js"></script>
+
 <div class="row">
 	<div class="large-12 columns">
 		<h1>South - Tuesday  Night League</h1>
@@ -36,13 +37,11 @@
 						<form>
 					  	<div class="row">
 					  		<div class="large-6 columns">
-				  			    <input type="hidden" name="homeTeam" value="{{this.[0]}}"  ng-model="homeTeam" />
 				  			    <label><b>{{this.[0]}}</b>
 							        <input type="text" name="homeScore" placeholder="Home Score" ng-model="homeScore"/>
   								</label>
 					  		</div>
 					  		<div class="large-6 columns">
-				  			    <input type="hidden" name="awayTeam" value="{{this.[1]}}" ng-model="awayTeam"/>
 				  			    <label><b>{{this.[1]}}</b>
 							        <input type="text" name="awayScore" placeholder="Away Score" ng-model="awayScore"/>
   								</label>
@@ -50,7 +49,7 @@
 					  	</div>
 					  	<div class="row">
 					  		<div class="large-12 columns">
-							  	<a href="#" class="button right" ng-click="submitScore('scoreModal{{@index}}')">Submit</a>
+							  	<a href="#" class="button right" ng-click="submitScore('scoreModal{{@index}}', '{{this.[0]}}', '{{this.[1]}}')">Submit</a>
 							</div>
 						</div>
 						</form>
