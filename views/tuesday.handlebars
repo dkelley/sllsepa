@@ -29,10 +29,11 @@
 				{{#each Games}}
 				<div class="large-8 small-8 columns">
 						{{this.[0]}} @ {{this.[1]}}
+						{{#if this.[3]}}-&nbsp;<b>({{this.[3]}} to {{this.[4]}}</b>){{/if}} 
 				</div>
 				<div class="large-4 small-4 columns">
-					<a href="#" data-reveal-id="scoreModal{{@index}}">Submit Score</a>
-					<div id="scoreModal{{@index}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+					<a href="#" data-reveal-id="scoreModal{{@../index}}{{@index}}">Submit Score</a>
+					<div id="scoreModal{{@../index}}{{@index}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 					  	<h2 id="modalTitle" style="color: #000000; !important">Submit Score</h2>
 						<form>
 					  	<div class="row">
