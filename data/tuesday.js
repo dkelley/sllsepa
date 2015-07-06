@@ -24,7 +24,7 @@
 ["Great Am LC ","Lax Zone","6:30 PM",0,0]
 ]},
 {"Date":"06/30/15","Games":[
-["Old Lions","Top Shelf","6:30 PM",0,0],
+["Old Lions","Top Shelf","6:30 PM",12,4],
 ["Sun Valley Cocos","Ridley ","6:30 PM",0,0],
 ["Garnet Valley","Springfield","6:30 PM",0,0],
 ["Haverford","Upper Darby","6:30 PM",0,0],
