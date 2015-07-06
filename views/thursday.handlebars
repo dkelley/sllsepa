@@ -30,6 +30,7 @@
 				{{#each Games}}
 				<div class="large-8 small-8 columns">
 						{{this.[0]}} @ {{this.[1]}}
+						{{#if this.[3]}}-&nbsp;<b>({{this.[3]}} to {{this.[4]}}</b>){{/if}} 
 				</div>
 				<div class="large-4 small-4 columns">
 					<a href="#" data-reveal-id="scoreModal{{@index}}">Submit Score</a>
