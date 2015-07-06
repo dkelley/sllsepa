@@ -8,7 +8,7 @@
 	"contacts":[{"name":"Danny Bickell","email":"bickell3@gmail.com"}], 
 	"field":"AIM Academy<br/>1200 River Rd, Conshohocken"
 },
-{"name":"TEAM ADVIL","wins":1,"loses":1,
+{"name":"TEAM ADVIL","wins":2,"loses":1,
 	"contacts":[{"name":"Tim McIntyre","email":"tmcintyre@dkappliances.net"}], 
 	"field":"TBD"
 },
@@ -16,7 +16,7 @@
 	"contacts":[{"name":"George Chou","email":"gchou66@gmail.com"}], 
 	"field":"Shipley School's Farm Field<br/>1319 Waverly Rd<br/>Gladwyne, PA 19035"
 },
-{"name":"WILMINGTON WINGS","wins":1,"loses":1,
+{"name":"WILMINGTON WINGS","wins":1,"loses":2,
 	"contacts":[{"name":"Rob Grant","email":"grantini@aol.com"}], 
 	"field":"Upland Country Day School (LOWER field)<br/>619 Byrd Rd<br/>Kennett Square, PA"
 },
