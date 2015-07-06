@@ -29,9 +29,10 @@ var sesTransport = require('nodemailer-ses-transport');
 //     console.log('New token for %s: %s', token.user, token.accessToken);
 // });
 
+
 var transporter = nodemailer.createTransport(sesTransport({
-    accessKeyId: 'AKIAJCJVGOUGHUN4JVWQ',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIAI7WS5UFTDIYKRJDQ',
+    secretAccessKey: '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',
     rateLimit: 5
 }));
 
