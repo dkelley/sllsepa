@@ -16,10 +16,12 @@ var transporter = nodemailer.createTransport(sesTransport({
 
 // load data files
 var tuesday = fs.readFileSync("data/tuesday.js", 'utf8');
+var wednesday = fs.readFileSync("data/wednesday.js", 'utf8');
 var thursday = fs.readFileSync("data/thursday.js", 'utf8');
 var masters = fs.readFileSync("data/masters.js", 'utf8');
 
 var tuesdayGames = JSON.parse(tuesday);
+var wednesdayGames = JSON.parse(wednesday);
 var thursdayGames = JSON.parse(thursday);
 var mastersData = JSON.parse(masters);
 
@@ -57,7 +59,7 @@ router.post('/score', function(req, res, next) {
   // return res.status(400).json({"error_message": err});    
         // }else{
   // return res.json({ success: true });   
-  var msgHtml = "Home:" + req.body.homeTeam + ":" + req.body.homeScore + "<br/>" + "Away:" + req.body.awayTeam + ":" + req.body.awayScore;
+  // var msgHtml = "Home:" + req.body.homeTeam + ":" + req.body.homeScore + "<br/>" + "Away:" + req.body.awayTeam + ":" + req.body.awayScore;
   var msgText = "Home:" + req.body.homeTeam + ":" + req.body.homeScore + "\n" + "Away:" + req.body.awayTeam + ":" + req.body.awayScore;
 
   var mailOptions = {
@@ -65,7 +67,7 @@ router.post('/score', function(req, res, next) {
       to: ['dan@kelleyland.com'], // list of receivers
       subject: 'SLLSEPA Score', // Subject line
       text: msgText, // plaintext body
-      html: msgHtml // html body
+      html: msgText // html body
   };  
 
   // // console.log(mailOptions);
@@ -87,7 +89,9 @@ router.get('/schedule/:section', function(req, res, next) {
   var data = tuesdayGames;
   var teams = null;
   if ("tuesday" == req.params.section){
-	data = tuesdayGames;
+	   data = tuesdayGames;
+  }else if ("wednesday" == req.params.section){
+    data = wednesdayGames;
   }else if ("thursday" == req.params.section){
   	data = thursdayGames;
   }else if ("masters" == req.params.section){
