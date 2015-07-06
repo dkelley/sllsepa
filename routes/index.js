@@ -2,37 +2,14 @@ var express = require('express');
 var router = express.Router();
 var fs = require("fs");
 
+var config = require('../config');
+
 var nodemailer = require("nodemailer");
-// var smtpPool = require('nodemailer-smtp-pool');
 var sesTransport = require('nodemailer-ses-transport');
-// var xoauth2 = require("xoauth2"),
-//     xoauth2gen;
-
-// xoauth2gen = xoauth2.createXOAuth2Generator({
-//     user: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a@developer.gserviceaccount.com',
-//     clientId: '741265938506-u89bo3t0fdi4ockdnq98fre47q62sl5a.apps.googleusercontent.com',
-//     clientSecret: 'mwnRoAxSDS_w5jvzAC12Yxr0',    
-//     refreshToken: '1/4zB450GQQxQTPdIlgLVySQZ3t6DcxY82l6bCrkAwBDFIgOrJDtdun6zK6XiATCKT'
-// });
-
-// // SMTP/IMAP
-// xoauth2gen.getToken(function(err, token){
-//     if(err){
-//         return console.log(err);
-//     }
-//     console.log("AUTH XOAUTH2 " + token);
-// });
-
-// // listen for token updates
-// // you probably want to store these to a db
-// xoauth2gen.on('token', function(token){
-//     console.log('New token for %s: %s', token.user, token.accessToken);
-// });
-
 
 var transporter = nodemailer.createTransport(sesTransport({
-    accessKeyId: 'AKIAI7WS5UFTDIYKRJDQ',
-    secretAccessKey: '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',
+    accessKeyId: config.SmtpUsername,
+    secretAccessKey: config.SmtpPassword,
     rateLimit: 5
 }));
 
