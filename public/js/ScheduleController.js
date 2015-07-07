@@ -8,8 +8,7 @@ angular.module('sllsepaApp', [])
 		    $('#'+modalName).foundation('reveal', 'close');
 	  	}).
 	  	error(function(data, status, headers, config) {
-	    	// called asynchronously if an error occurs
-	    	// or server returns response with an error status.
+	  		alert("error submitting score");
 	  	});
 	};
 
