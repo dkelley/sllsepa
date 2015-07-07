@@ -11,5 +11,4 @@ angular.module('sllsepaApp', [])
 	  		alert("error submitting score");
 	  	});
 	};
-
   });
