@@ -65,7 +65,7 @@ router.post('/score', function(req, res, next) {
   var mailOptions = {
       from: 'dan+sllsepa@kelleyland.com', // sender address
       to: ['dan@kelleyland.com'], // list of receivers
-      subject: 'SLLSEPA Score', // Subject line
+      subject: 'SLLSEPA Score for ' + req.body.division, // Subject line
       text: msgText, // plaintext body
       html: msgText // html body
   };  
