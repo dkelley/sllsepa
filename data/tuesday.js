@@ -28,10 +28,10 @@
 ["Sun Valley Cocos","Ridley ","6:30 PM",0,0],
 ["Garnet Valley","Springfield","6:30 PM",0,0],
 ["Haverford","Upper Darby","6:30 PM",0,0],
-["Dunn Financial","O’Hara","6:30 PM",0,0],
-["Lax Zone","Duffers Pub","8:00 PM",0,0],
+["Dunn Financial","O’Hara","6:30 PM",15,3],
+["Lax Zone","Duffers Pub","8:00 PM",15,7],
 ["Great Am LC ","Kelly’s Sports","6:30 PM",0,0],
-["Rustin","Baggataway Tav","6:30 PM",0,0],
+["Rustin","Baggataway Tav","6:30 PM",3,14],
 ["Mud Dogs","RJP Consulting","6:30 PM",0,0]
 ]},
 {"Date":"07/07/15","Games":[
