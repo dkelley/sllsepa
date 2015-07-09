@@ -9,7 +9,7 @@
 ["Lax Zone","Old Lions","6:30 PM",15,7],
 ["Dunn Financial","Great Am LC ","6:30 PM",0,0],
 ["Baggataway Tav","Duffers Pub","6:30 PM",10,5],
-["RJP Consulting","Kelly’s Sports","6:30 PM",0,0],
+["RJP Consulting","Kelly’s Sports","6:30 PM",15,5],
 ["Rustin","Mud Dogs","6:30 PM",0,0]
 ]},
 {"Date":"06/23/15","Games":[
@@ -32,7 +32,7 @@
 ["Lax Zone","Duffers Pub","8:00 PM",15,7],
 ["Great Am LC ","Kelly’s Sports","6:30 PM",0,0],
 ["Rustin","Baggataway Tav","6:30 PM",3,14],
-["Mud Dogs","RJP Consulting","6:30 PM",0,0]
+["Mud Dogs","RJP Consulting","6:30 PM",4,20]
 ]},
 {"Date":"07/07/15","Games":[
 ["Haverford","Springfield","6:30 PM",0,0],
