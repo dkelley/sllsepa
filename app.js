@@ -14,11 +14,18 @@ var users = require('./routes/users');
 
 var app = express();
 
+
+var Handlebars = require('handlebars/runtime')['default'];
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+
+
+Handlebars.registerHelper('json', function(context) {
+    return JSON.stringify(context);
+});
 
 // exphbs.registerPartials(__dirname + '/views/partials');
 
