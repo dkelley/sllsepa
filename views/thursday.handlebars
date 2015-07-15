@@ -1,3 +1,6 @@
+<script type="text/javascript">
+ window.teamData = {{{ data }}};
+</script>
 <script src="/js/ScheduleController.js"></script>
 
 <div class="row">
@@ -5,17 +8,18 @@
 		<h1>Thursday Night League</h1>
 	</div>
 </div>    
+<div ng-controller="ScheduleController">
 
 <div class="row">
 	<div class="large-12 columns">
 		<div class="panel">
-			<h3>Rankings (&amp; Team Contacts)</h3>
-			{{#if teams}}
-			{{/if}} 
+			<h3>Rankings</h3>
+			<div ng-repeat="team in teams">
+			  	<span ng-bind="team.name"></span> (<span ng-bind="team.wins"></span> - <span ng-bind="team.loses"></span>)
+			</div>
 		</div>
 	</div>
 </div>	
-<div ng-controller="ScheduleController">
 
 {{#if games}}
 {{#each games}}
