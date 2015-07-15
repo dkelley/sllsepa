@@ -12,13 +12,13 @@
 	"contacts":[{"name":"Danny Bickell","email":"bickell3@gmail.com"}], 
 	"field":"AIM Academy<br/>1200 River Rd, Conshohocken"
 },
-{"name":"KELLY'S","wins":2,"loses":2,
-	"contacts":[{"name":"George Chou","email":"gchou66@gmail.com"}], 
-	"field":"Shipley School's Farm Field<br/>1319 Waverly Rd<br/>Gladwyne, PA 19035"
-},
-{"name":"WILMINGTON WINGS","wins":1,"loses":3,
+{"name":"WILMINGTON WINGS","wins":2,"loses":2,
 	"contacts":[{"name":"Rob Grant","email":"grantini@aol.com"}], 
 	"field":"Upland Country Day School (LOWER field)<br/>619 Byrd Rd<br/>Kennett Square, PA"
+},
+{"name":"KELLY'S","wins":1,"loses":3,
+	"contacts":[{"name":"George Chou","email":"gchou66@gmail.com"}], 
+	"field":"Shipley School's Farm Field<br/>1319 Waverly Rd<br/>Gladwyne, PA 19035"
 },
 {"name":"PHILA. MASTERS","wins":0,"loses":4,
 	"contacts":[{"name":"Michael DiPuppo","email":"coachdipuppo@hotmail.com"}], 
@@ -39,7 +39,7 @@
 ["PHILA. MASTERS","BICKELL ELECTRIC","6:30 PM",3,13]
 ]},{"Date":"07/09/15","Games":[
 ["PHILA. MASTERS","TEAM ADVIL","6:30 PM",1,9],
-["WILMINGTON WINGS","KELLY'S","6:30 PM",2,5],
+["WILMINGTON WINGS","KELLY'S","6:30 PM",1,0],
 ["BICKELL ELECTRIC","RIDLEY","6:30 PM",4,8]
 ]},{"Date":"07/16/15","Games":[
 ["RIDLEY","WILMINGTON WINGS","12:00 AM",0,0],

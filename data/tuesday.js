@@ -3,12 +3,12 @@
 "games":
 [
 {"Date":"06/16/15","Games":[
-["Sun Valley Cocos","OHara","6:30 PM",14,3],
+["Sun Valley Cocos","O’Hara","6:30 PM",14,3],
 ["Top Shelf","Garnet Valley","6:30 PM",4,20],
 ["Ridley ","Haverford","6:30 PM",0,0],
 ["Springfield","Upper Darby","6:30 PM",6,8],
 ["Lax Zone","Old Lions","6:30 PM",15,7],
-["Dunn Financial","Great Am LC ","6:30 PM",0,0],
+["Dunn Financial","Great Am LC ","6:30 PM",9,8],
 ["Baggataway Tav","Duffers Pub","6:30 PM",10,5],
 ["RJP Consulting","Kelly’s Sports","6:30 PM",15,5],
 ["Rustin","Mud Dogs","6:30 PM",0,0]
