@@ -29,30 +29,47 @@ angular.module('sllsepaApp', [])
   		});
 	});
 
-	var output = [];
-	for (var key in teamRecords) {
-	    teamRecords[key].name = key;   
-	    output.push(teamRecords[key]);
-	}  
-
-	output.sort(function(a, b) { 
-		if (a.wins > b.wins){
-			return -1
-		}else if (a.wins < b.wins){			
-			return 1		
-		}else{
-			if (a.loses < b.loses)
-				return -1
-			else if (a.loses > b.loses)
-				return 1
-			else
-				return 0;
+	var leagues = {};
+  	angular.forEach(window.teams, function(value) {
+  		var league = leagues[value[1]];
+		if (league == null){
+			league = [];
 		}
-	    // return ((a.wins > b.wins) ? -1 : ((a.wins < b.wins) ? 1 : 0));
+		var team = teamRecords[value[0]];
+		team.name = value[0];
+		league.push(team);
+		leagues[value[1]] = league;
 	});
-  	$scope.teams = output;
 
-	$scope.submitScore = function(divison, modalName, homeTeam, awayTeam) {
+	// var output = [];
+	// for (var key in teamRecords) {
+	//     teamRecords[key].name = key;   
+	//     output.push(teamRecords[key]);
+	// }  
+
+	angular.forEach(leagues, function(teams, key) {
+		console.log(teams);
+		teams.sort(function(a, b) { 
+			if (a.wins > b.wins){
+				return -1
+			}else if (a.wins < b.wins){			
+				return 1		
+			}else{
+				if (a.loses < b.loses)
+					return -1
+				else if (a.loses > b.loses)
+					return 1
+				else
+					return 0;
+			}
+		    // return ((a.wins > b.wins) ? -1 : ((a.wins < b.wins) ? 1 : 0));
+		});
+	});
+  	// $scope.teams = output;
+	// console.log(leagues);
+	$scope.leagues = leagues;
+
+	$scope.submitScore = function(division, modalName, homeTeam, awayTeam) {
 		$http.post('/score', {"division": division, homeScore:$scope.homeScore, awayScore:$scope.awayScore, "homeTeam": homeTeam, "awayTeam": awayTeam}).
 		  success(function(data, status, headers, config) {
 	    	// this callback will be called asynchronously

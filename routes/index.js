@@ -100,7 +100,7 @@ router.get('/schedule/:section', function(req, res, next) {
   console.log(data);
   res.render(req.params.section, {
   		"games":  data.games,
-  		"teams": data.teams,
+  		"teams": JSON.stringify(data.teams),
       "data": JSON.stringify(data.games)
   	}
   );

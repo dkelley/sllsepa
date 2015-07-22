@@ -1,4 +1,13 @@
 {"teams":[
+	["Bryn Mawr Trust","West"],
+	["Dunn Financial","West"],
+	["GMH","West"],
+	["LaSalle Alums","East"],
+	["Lacrosse International","East"],
+	["Mesa Fresh","West"],
+	["Mojo’s","West"],
+	["OPC","East"],
+	["Smokey Joes","East"]
 ],
 "games":
 [

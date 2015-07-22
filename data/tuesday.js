@@ -1,4 +1,22 @@
 {"teams":[
+	["Baggataway Tav","North"],
+	["O’Hara","South"],
+	["Dunn Financial","North"],
+	["Duffers Pub","North"],
+	["Great Am LC ","North"],
+	["Garnet Valley","South"],
+	["Haverford","South"],
+	["Kelly’s Sports","North"],
+	["Lax Zone","North"],
+	["Mud Dogs","North"],
+	["Old Lions","South"],
+	["Ridley ","South"],
+	["RJP Consulting","North"],
+	["Rustin","North"],
+	["Springfield","South"],
+	["Sun Valley Cocos","South"],
+	["Top Shelf","South"],
+	["Upper Darby","South"]
 ],
 "games":
 [

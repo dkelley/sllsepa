@@ -1,5 +1,6 @@
 <script type="text/javascript">
  window.teamData = {{{ data }}};
+ window.teams = {{{ teams }}};
 </script>
 <script src="/js/ScheduleController.js"></script>
 
@@ -14,8 +15,11 @@
 	<div class="large-12 columns">
 		<div class="panel">
 			<h3>Rankings</h3>
-			<div ng-repeat="team in teams">
-			  	<span ng-bind="team.name"></span> (<span ng-bind="team.wins"></span> - <span ng-bind="team.loses"></span>)
+			<div ng-repeat="(league, teams) in leagues">
+				<h4 ng-bind="league"></h4>
+				<div ng-repeat="team in teams">
+				  	<span ng-bind="team.name"></span> (<span ng-bind="team.wins"></span> - <span ng-bind="team.loses"></span>)
+				</div>
 			</div>
 		</div>
 	</div>
