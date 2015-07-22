@@ -24,18 +24,18 @@
 ["Lacrosse International","OPC","6:30 PM",0,0]
 ]},
 {"Date":"07/09/15","Games":[
-["GMH","Smokey Joes","8:30 PM",0,0],
-["Bryn Mawr Trust","Mesa Fresh","6:30 PM",8,6],
-["Mojo’s","Dunn Financial","6:30 PM",0,0],
-["Lacrosse International","LaSalle Alums","6:30 PM",0,0],
-["1789","OPC","6:30 PM",9,5]
+	["GMH","Smokey Joes","8:30 PM",0,0],
+	["Bryn Mawr Trust","Mesa Fresh","6:30 PM",8,6],
+	["Mojo’s","Dunn Financial","6:30 PM",0,0],
+	["Lacrosse International","LaSalle Alums","6:30 PM",0,0],
+	["1789","OPC","6:30 PM",9,5]
 ]},
 {"Date":"07/16/15","Games":[
-["Bryn Mawr Trust","OPC","6:30 PM"],
-["Dunn Financial","Mesa Fresh","6:30 PM"],
-["Mojos","GMH","6:30 PM"],
-["1789","LaSalle Alums","6:30 PM"],
-["Smokey Joes","LaSalle Alums","6:30 PM"]
+	["LaSalle Alums","Mesa Fresh","6:30 PM",0,0],
+	["Mojo’s","Bryn Mawr Trust","6:30 PM",0,0],
+	["Dunn Financial","GMH","6:30 PM",0,0],
+	["1789","Lacrosse International","6:30 PM",15,6],
+	["Smokey Joes","OPC","6:30 PM",0,0]
 ]},
 {"Date":"07/23/15","Games":[
 ["Mojo’s","Lacrosse International","6:30 PM",0,0],
