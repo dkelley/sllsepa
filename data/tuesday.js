@@ -29,7 +29,7 @@
 ["Dunn Financial","Great Am LC ","6:30 PM",9,8],
 ["Baggataway Tav","Duffers Pub","6:30 PM",10,5],
 ["RJP Consulting","Kelly’s Sports","6:30 PM",15,5],
-["Rustin","Mud Dogs","6:30 PM",0,0]
+["Rustin","Mud Dogs","6:30 PM",4,12]
 ]},
 {"Date":"06/23/15","Games":[
 ["Upper Darby","Ridley ","6:30 PM",0,0],
@@ -37,7 +37,7 @@
 ["Garnet Valley","OHara","6:30 PM",0,0],
 ["Old Lions","Sun Valley Cocos","6:30 PM",10,11],
 ["Springfield","Rustin","6:30 PM",0,0],
-["Mud Dogs","Kelly’s Sports","6:30 PM",0,0],
+["Mud Dogs","Kelly’s Sports","6:30 PM",8,14],
 ["RJP Consulting","Duffers Pub","8:00 PM",0,0],
 ["Dunn Financial","Baggataway Tav","6:30 PM",0,0],
 ["Great Am LC ","Lax Zone","6:30 PM",0,0]
@@ -83,7 +83,7 @@
 ["Top Shelf","Duffers Pub","8:00 PM",0,0],
 ["Dunn Financial","Kelly’s Sports","6:30 PM",0,0],
 ["Lax Zone","Rustin","6:30 PM",0,0],
-["Mud Dogs","Great Am LC ","6:30 PM",0,0],
+["Mud Dogs","Great Am LC ","6:30 PM",1,0],
 ["RJP Consulting","Baggataway Tav","6:30 PM",0,0]
 ]
 }
