@@ -48,7 +48,7 @@
 ]},
 {"Date":"07/23/15","Games":[
 ["Mojo’s","Lacrosse International","6:30 PM",0,0],
-["Dunn Financial","Bryn Mawr Trust","6:30 PM",0,0],
+["Dunn Financial","Bryn Mawr Trust","6:30 PM",11,7],
 ["GMH","Mesa Fresh","6:30 PM",0,0],
 ["LaSalle Alums","OPC","6:30 PM",0,0],
 ["1789","Smokey Joes","8:30 PM",0,0]

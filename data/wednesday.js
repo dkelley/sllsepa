@@ -20,11 +20,11 @@
 	["Penncrest","Haverford","6:30 PM",0,0],
 	["Lower Merion","Upper Darby","6:30 PM",0,0],
 	["Oxford","Henderson","6:30 PM",0,0],
-	["Kennett","Rustin","6:30 PM",0,0]]},
+	["Kennett","Rustin","6:30 PM",8,6]]},
 {"Date":"07/29/15","Games":[
 	["Upper Darby","Haverford","6:30 PM",0,0],
 	["Lower Merion","Penncrest","6:30 PM",0,0],
 	["Rustin","Henderson","6:30 PM",0,0],
-	["Oxford","Kennett","6:30 PM",0,0]]}
+	["Oxford","Kennett","6:30 PM",2,9]]}
 ]
 }

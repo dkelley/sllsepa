@@ -79,7 +79,7 @@
 ["Ridley ","OHara","6:30 PM",0,0],
 ["Old Lions","Springfield","6:30 PM",0,0],
 ["Upper Darby","Sun Valley Cocos","6:30 PM",0,0],
-["Garnet Valley","Haverford","8:30 PM",0,0],
+["Garnet Valley","Haverford","8:30 PM",8,4],
 ["Top Shelf","Duffers Pub","8:00 PM",0,0],
 ["Dunn Financial","Kelly’s Sports","6:30 PM",0,0],
 ["Lax Zone","Rustin","6:30 PM",0,0],
