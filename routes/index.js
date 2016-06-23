@@ -81,7 +81,9 @@ router.post('/score', function(req, res, next) {
   });
 });
 
-
+router.get('/contacts', function(req, res, nest){
+	res.render('contacts');
+});
 
 router.get('/schedule/:section', function(req, res, next) {
   // res.render('index', { title: 'Express' });
