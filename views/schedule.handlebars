@@ -6,7 +6,7 @@
 
 <div class="row">
 	<div class="large-12 columns">
-		<h1>Thursday Night League</h1>
+		<h1>{{{ league }}}</h1>
 	</div>
 </div>    
 <div ng-controller="ScheduleController">
@@ -55,8 +55,8 @@
 					  		</div>
 					  	</div>
 					  	<div class="row">
-					  		<div class="large-12 columns">
-							  	<a href="#" class="button right" ng-click="submitScore('Thursday', 'scoreModal{{@../index}}{{@index}}', '{{this.[0]}}', '{{this.[1]}}')">Submit</a>
+					  		<div class="large-12 columns">					  			
+							  	<a href="#" class="button right" ng-click="submitScore('New Score', 'scoreModal{{@../index}}{{@index}}', '{{this.[0]}}', '{{this.[1]}}')">Submit</a>
 							</div>
 						</div>
 						</form>

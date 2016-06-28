@@ -13,7 +13,7 @@ var transporter = nodemailer.createTransport(sesTransport({
     rateLimit: 5
 }));
 
-
+console.log("SMTP:" + config.SmtpUsername)
 // load data files
 var tuesdayDelco = fs.readFileSync("data/tuesdayDelco.js", 'utf8');
 var tuesdayWest = fs.readFileSync("data/tuesdayWest.js", 'utf8');
@@ -111,7 +111,8 @@ router.get('/schedule/:section', function(req, res, next) {
   res.render('schedule', {
   		"games":  data.games,
   		"teams": JSON.stringify(data.teams),
-      "data": JSON.stringify(data.games)
+      "data": JSON.stringify(data.games),
+      "league": req.params.section
   	}
   );
 });
