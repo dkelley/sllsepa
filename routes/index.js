@@ -15,12 +15,14 @@ var transporter = nodemailer.createTransport(sesTransport({
 
 
 // load data files
-var tuesday = fs.readFileSync("data/tuesday.js", 'utf8');
+var tuesdayDelco = fs.readFileSync("data/tuesdayDelco.js", 'utf8');
+var tuesdayWest = fs.readFileSync("data/tuesdayWest.js", 'utf8');
 var wednesday = fs.readFileSync("data/wednesday.js", 'utf8');
 var thursday = fs.readFileSync("data/thursday.js", 'utf8');
 var masters = fs.readFileSync("data/masters.js", 'utf8');
 
-var tuesdayGames = JSON.parse(tuesday);
+var tuesdayDelcoGames = JSON.parse(tuesdayDelco);
+var tuesdayWestGames = JSON.parse(tuesdayWest);
 var wednesdayGames = JSON.parse(wednesday);
 var thursdayGames = JSON.parse(thursday);
 var mastersData = JSON.parse(masters);
@@ -88,10 +90,16 @@ router.get('/contacts', function(req, res, nest){
 router.get('/schedule/:section', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   console.log(req.params.section);
-  var data = tuesdayGames;
+  console.log('division: ' + req.query.division);
+  var division = req.query.division
+  var data = thursdayGames;
   var teams = null;
   if ("tuesday" == req.params.section){
-	   data = tuesdayGames;
+    if (division != null && division === 'west'){
+  	   data = tuesdayWestGames;
+    }else{
+       data = tuesdayDelcoGames;
+    }
   }else if ("wednesday" == req.params.section){
     data = wednesdayGames;
   }else if ("thursday" == req.params.section){
@@ -100,7 +108,7 @@ router.get('/schedule/:section', function(req, res, next) {
   	data = mastersData;
   }
   console.log(data);
-  res.render(req.params.section, {
+  res.render('schedule', {
   		"games":  data.games,
   		"teams": JSON.stringify(data.teams),
       "data": JSON.stringify(data.games)
