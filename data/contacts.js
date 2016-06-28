@@ -14,7 +14,7 @@
 
 <div>Matt Daly med5041@gmail.com</div>
 
-<div>Old Lions Bill ODonnell Odonnell@alum.villanova.edu</div>
+<div>Old Lions Bill ODonnell ODonnell@Alum.Lehigh.edu</div>
 
 <div>Ridley LT Josh Fox laxfox7@yahoo.com</div>
 
@@ -48,7 +48,7 @@
 
 <h3>West</h3>
 
-<div>Bryn Mawr Trust Bill ODonnel</div>
+<div>Bryn Mawr Trust Bill ODonnel ODonnell@Alum.Lehigh.edu</div>
 
 <div>Dunn Financial Joe Dunn</div>
 
