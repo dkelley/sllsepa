@@ -7,7 +7,6 @@ angular.module('sllsepaApp', [])
   		angular.forEach(value.Games, function(game, key) {
   			var homeTeamRecord = teamRecords[game[0]];
   			var awayTeamRecord = teamRecords[game[1]];
-
   			if (homeTeamRecord == null){
   				homeTeamRecord = {wins:0, loses:0}
   			}
@@ -15,7 +14,8 @@ angular.module('sllsepaApp', [])
   				awayTeamRecord = {wins:0, loses:0}
   			}
 
-  			if (game.length ==5 && game[3] != 0 && game[4] !=0){
+  			if (game.length ==5 && !(game[3] == 0 && game[4] ==0)){
+	  			console.log(homeTeamRecord);
   				if (game[3] > game[4]){
   					homeTeamRecord.wins = homeTeamRecord.wins +1;
   					awayTeamRecord.loses = awayTeamRecord.loses +1;
@@ -36,6 +36,8 @@ angular.module('sllsepaApp', [])
 			league = [];
 		}
 		var team = teamRecords[value[0]];
+		if (angular.isUndefined(team))
+			team = {};
 		team.name = value[0];
 		league.push(team);
 		leagues[value[1]] = league;
@@ -48,7 +50,6 @@ angular.module('sllsepaApp', [])
 	// }  
 
 	angular.forEach(leagues, function(teams, key) {
-		console.log(teams);
 		teams.sort(function(a, b) { 
 			if (a.wins > b.wins){
 				return -1
