@@ -1,5 +1,5 @@
 {"teams":[
-	["1789 GERMANTOWN ACADEMY" "West"],
+	["1789 GERMANTOWN ACADEMY", "West"],
 	["Bryn Mawr Trust","East"],
 	["Dunn Financial","East"],
 	["GMH","East"],
@@ -9,7 +9,7 @@
 	["Mojo’s","West"],
 	["Penn Charter","West"],
 	["Smokey Joes","West"],
-	["Headstrong","East"]
+	["Headstrong","East"],
 	["Springfield PW","East"]
 ],
 "games":
