@@ -40,11 +40,16 @@
 ["Upper Darb","HAVEN","6:30 PM",0,0],
 ["Haverford","O’Hara","6:30 PM",14,3]
 ]},
-{"Date":"07/21/16","Games":[
-["Old Lions","O’Hara","6:30 PM",10,5],
-["Springfield","COCOS","6:30 PM",0,20],
-["Upper Darby","Ridley","6:30 PM",1,2],
-["HAVEN","Haverford","7:30 PM",3,10]
-]
-}
+	{"Date":"07/21/16","Games":[
+		["Old Lions","O’Hara","6:30 PM",10,5],
+		["Springfield","COCOS","6:30 PM",0,20],
+		["Upper Darby","Ridley","6:30 PM",1,2],
+		["HAVEN","Haverford","7:30 PM",3,10]
+		]
+	},
+	{"Date":"07/26/16","Games":[
+		["Springfield","Ridley","6:30 PM",0,0],
+		["Old Lions","Haverford","8:00 PM",10,5],		
+		["TBD","O’Hara","6:30 PM",0,0]		]
+	}
 ]}
