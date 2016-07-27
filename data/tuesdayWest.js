@@ -45,11 +45,11 @@
 	["PJ Whelihans","Baggataway Tav","6:30 PM",9,8],
 	["Kelly’s Sports","Rustin","6:30 PM",12,4],
 	["Dunn Financial","Great American Pub","6:30 PM",9,14],
-	["Garnet Valley","Duffers Pub","8:00 PM",0,0]
+	["Garnet Valley","Duffers Pub","8:00 PM",9,8]
 	]},
 	{"Date":"07/26/16","Games":[
-	["Baggataway Tav", "Garnet Valley","6:30 PM",0,0],
-	["PJ Whelihans","Duffers Pub","8:15 PM",0,0],
+	["Baggataway Tav", "Garnet Valley","6:30 PM",9,10],
+	["PJ Whelihans","Duffers Pub","8:15 PM",5,10],
 	["Dunn Financial","Kelly’s Sports",0,0],
 	["Delco 7th place","GALC","6:30 PM",0,0]	
 	]}
